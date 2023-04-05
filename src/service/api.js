@@ -1,4 +1,5 @@
 import axios from 'axios'
+import { ApiResponse } from '../type/api.response.js'
 
 export class Api {
     #api
@@ -30,7 +31,7 @@ export class Api {
             'get',
             this.#url('query', parameters)
         ).then(function (response) {
-            // @TODO: create response types
+            return new ApiResponse(response.data)
         }).catch(function (e) {
             console.error(e.message)
         })

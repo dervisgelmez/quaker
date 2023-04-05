@@ -1,0 +1,38 @@
+{
+    "name": "quaker",
+    "version": "1.0.0",
+    "description": "Configurable list of recent earthquakes",
+    "main": "index.js",
+    "preferGlobal": true,
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dervisgelmez/quaker.git"
+    },
+    "keywords": [
+        "quaker",
+        "earthquake terminal",
+        "earthquake list",
+        "list earthquake",
+        "earthquakes",
+        "last earthquake"
+    ],
+    "author": {
+        "name": "Derviş Gelmez",
+        "email": "gelmezdervis@gmail.com",
+        "url": "https://snipfeed.co/dervisgelmez"
+    },
+    "homepage": "https://github.com/dervisgelmez/quaker",
+    "bugs": {
+        "url": "https://github.com/dervisgelmez/quaker/issues"
+    },
+    "license": "MIT",
+    "bin": {
+        "quaker": "./index.js"
+    },
+    "dependencies": {
+        "axios": "^1.3.2",
+        "commander": "^10.0.0",
+        "dayjs": "^1.11.7"
+    }
+}
